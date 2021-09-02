@@ -1,0 +1,17 @@
+public class GoogleApiController {
+    
+    public String city = 'Bogota';
+    public String input1 {get;set;}
+    
+    public String getcity(){
+        return this.city;
+    }
+    public void setcity(String strvalue){
+        this.city = strvalue;
+    }    
+    public void readCity (){
+        this.city = input1;
+			
+    }
+
+}

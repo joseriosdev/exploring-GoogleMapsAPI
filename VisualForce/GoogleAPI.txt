@@ -1,0 +1,54 @@
+<apex:page controller="GoogleApiController" >
+    <style>
+    
+        .center {
+  			display: block;
+  			text-align: center;
+        	font-size: 20px;
+  			
+			}
+        .result {
+        
+        	display: block;
+  			text-align: center;
+        	font-size: 20px;	
+        	width: 100px;
+        	
+        	}
+        
+        
+    </style>
+    <apex:form >
+        <apex:pageBlock >
+            <h1 class="center">Google API test</h1>
+            <apex:actionFunction name="readCity" action="{!readCity}" reRender="update" status="myStatus" />
+            <br/>
+            <apex:inputText value="{!input1}" id="input1">Enter a city: </apex:inputText>
+            <apex:outputPanel onclick="readCity()" styleClass="btn">
+            	Go to City
+       		</apex:outputPanel>
+        </apex:pageBlock>
+    	 
+    </apex:form>
+    
+    <apex:outputPanel id="update">
+    	
+        <apex:actionStatus StartstyleClass="center" id="myStatus" startText=" Loading...">
+        	<apex:facet name="stop">
+                 
+            
+                 <iframe
+                    width="600"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAxGeoHEkoFyeyUnskesFsX4g6sbGVCJIc&q={!city}">
+                </iframe>
+            	
+            	
+            </apex:facet>
+      
+        </apex:actionStatus>
+    </apex:outputPanel>
+</apex:page>
