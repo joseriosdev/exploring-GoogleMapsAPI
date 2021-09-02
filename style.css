@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace, verdana, sans-serif !important;
+	background-color: #494055;
+	color: #a5a5a5;
+}body::-webkit-scrollbar{
+    width: 1rem;
+}body::-webkit-scrollbar-track{
+    background: transparent;
+}body::-webkit-scrollbar-thumb{
+    background: #191929;
+}
+
+em {
+	font-size: .9rem;
+	color: #959595;
+}
+
+a {
+	font-weight: bold;
+	font-size: .9rem;
+	border-bottom: dotted 1px #b55;
+	text-decoration: none;
+	color: #b55;
+}
+
+h1 {
+	padding: .5rem;
+	margin-bottom: 2rem;
+	position: relative;
+	color: silver;
+	background-color: #66a;
+}
+
+ul {
+	width: 80%;
+	margin-left: 3rem;
+	list-style: square;
+}
+
+main {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.input {
+	margin: .5rem;
+	padding-left: 1rem;
+	width: 120px;
+	height: 35px;
+	border: solid 2px #393949;
+	outline: none;
+}.input:focus {
+	border: solid 2px #6060f5;
+}
+
+.btn {
+	margin: 1rem;
+	padding: .6rem;
+	font-weight: bold;
+	background-color: #b55;
+	color: silver;
+	border: solid 1px #222;
+	cursor: pointer;
+}.btn:hover {
+	color: white;
+}
+
+
+#map {
+	margin: 2rem auto;
+	width: 80%;
+	height: 500px;
+}

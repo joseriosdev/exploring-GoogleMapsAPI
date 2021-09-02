@@ -4,30 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    #map {
-      height: 400px;
-      width: 90%;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
+  <base target="_blank">
+  <title>Exploring Google Maps API</title>
 </head>
+
 <body>
-  <h1>Google Map</h1>
-<div id="map"></div>
+	<main>
+		<header>
+			<h1>Exploring Google Maps API</h1>
+			<p>Google Maps API have a wide varity of API's. This learning project uses two of then. <em><strong>Note:</strong> Might not be working now because the API key works for free few days.</em></p>
+			<ul>
+				<li><a href="https://developers.google.com/maps/documentation/javascript/overview">Maps JavaScript API</a></li>
+				<li><a href="https://developers.google.com/maps/documentation/geolocation/overview">Geolocation API</a></li>
+			</ul>
+			
+		</header>
+		<form>
+			<input type="text" placeholder="Country" class="input" id="country" required pattern="[a-zA-Z]{1,20}">
+			<input type="text" placeholder="City" class="input" id="city" required pattern="[a-zA-Z]{1,20}">
+			<input type="submit" value="Search" class="btn">
+		</form>
+		<div id="map"></div>
+	</main>
 
-
-<script>
-  let map;
-
-  function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: -34.397, lng: 150.644 },
-      zoom: 8,
-    });
-  }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxGeoHEkoFyeyUnskesFsX4g6sbGVCJIc&callback=initMap"></script>
-
+	<script src="./app.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxGeoHEkoFyeyUnskesFsX4g6sbGVCJIc&callback=initMap"></script>
 </body>
 </html>
