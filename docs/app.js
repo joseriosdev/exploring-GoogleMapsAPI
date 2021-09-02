@@ -16,10 +16,7 @@ function initMap() {
 		icon: '../img/jalasoft-landmark.png'
 	});
 	
-	map.addListener('click', (event) => {
-		addMarker(event.latLng);
-		
-	});
+	map.addListener('click', (event) => addMarker(event.latLng));
 }
 
 function addMarker(pos) {
@@ -39,9 +36,6 @@ function addMarker(pos) {
 	});
 	marker.addListener('click', () => infoWindow.open(map, marker));
 }
-
-
-/*
 // In the following example, markers appear when the user clicks on the map.
 // The markers are stored in an array.
 // The user can then click an option to hide, show or delete the markers.
