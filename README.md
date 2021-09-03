@@ -1,4 +1,4 @@
-#  <a href="https://imgbb.com/"><img src="https://i.ibb.co/NVmJfFm/google-maps-icon-130921.png" alt="google-maps-icon-130921" border="0" /></a> Exploring Google Maps API!
+#  <a href="https://imgbb.com/"><img src="https://i.ibb.co/NVmJfFm/google-maps-icon-130921.png" alt="google-maps-icon-130921" border="0" /></a> Explorando Google Maps API!
 
 
 Con la API de google mapas podemos crear mapas personalizados y aplicaciones basadas en la ubicación para web, Android e iOS.
@@ -104,12 +104,12 @@ La API de Maps Embed permite colocar un mapa interactivo en una página web con 
 Mediante la etiqueta `<iframe>` se pueden insertar mapas de la siguiente manera:
 ```
 <iframe
-width="600"
-height="450"
-style="border:0"
-loading="lazy"
-allowfullscreen
-src="https://www.google.com/maps/embed/v1/place?key= API_KEY &q=Space+Needle,Seattle+WA">  
+	width="600"
+	height="450"
+	style="border:0"
+	loading="lazy"
+	allowfullscreen
+	src="https://www.google.com/maps/embed/v1/place?key= API_KEY &q=Space+Needle,Seattle+WA">  
 </iframe>
 ```
 Así luciría el mapa insertado:
