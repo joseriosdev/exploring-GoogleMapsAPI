@@ -43,6 +43,8 @@ Se puede copiar o regresar a la opción para usarla después, esta clave se tran
 ## Maps JavaScript API
 
 La API de JavaScript de Maps permite personalizar los mapas mapas con contenido propio e imágenes para mostrarlos en páginas web y móviles, también se caracteriza por añadir controles que dejan que el usuario interactue con la interfaz, esto último puede ser agradado por el desarrolador o dejar que la API haga el resto.
+
+
 <a href="https://ibb.co/mb84pBP"><img src="https://i.ibb.co/4Kdpkf0/jsmaps-example.png" alt="jsmaps-example" border="0" /></a>
 
 
