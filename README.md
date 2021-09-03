@@ -123,11 +123,22 @@ Cabe mencionar que todas las solicitudes de Maps Embed API son gratuitas con uso
 **Para obtener más información:**
 - Documentación oficial: [API de inserción de mapas](https://developers.google.com/maps/documentation/embed)
 
-# Ejemplo práctico
+## Ejemplo práctico
 
 Con esta breve introducción, mostraremos un poco del ejemplo práctico haciendo uso de la API:
 
 ### *[Maps JavaScript API](https://github.com/joseriosdev/exploring-GoogleMapsAPI/tree/main/docs)*
 
+<a href="https://ibb.co/BNThmpg"><img src="https://i.ibb.co/bJN4x0r/Microsoft-Teams-image6de9dfa7e296ff92989daffd03fb3d97d048d737160d97faf5ce9a21d205cc3e.png" alt="Microsoft-Teams-image6de9dfa7e296ff92989daffd03fb3d97d048d737160d97faf5ce9a21d205cc3e" border="0" /></a>
+
 
 ### *[Maps Embed API](https://github.com/joseriosdev/exploring-GoogleMapsAPI/tree/main/VisualForce)*
+
+<a href="https://ibb.co/JKkrn3v"><img src="https://i.ibb.co/t4CYBLq/Microsoft-Teams-image8f58cfe1c892d39b1eb2220fdd8e0c4881087670931cf9ecd53a08e45e2bb965.png" alt="Microsoft-Teams-image8f58cfe1c892d39b1eb2220fdd8e0c4881087670931cf9ecd53a08e45e2bb965" border="0" /></a>
+
+## Colaboradores
+
+* [José Rios](https://github.com/joseriosdev)
+* [Sergio Ayala](https://github.com/sergslat)
+* [Marcela Sánchez](https://github.com/marcewp15/)
+* [Jacob Mercado](https://github.com/jamerbi)
