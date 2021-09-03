@@ -56,44 +56,43 @@ Algunos de los controles usados son:
 * Entre otros.
 
 **El código inicial luciría así:**
-```
-HTML:
+```html
 <!DOCTYPE html>  
 <html>
-	<head> 
-		<title>Simple Map</title>
-		<script  src="https://polyfill.io/v3/polyfill.min.js?	features=default"></script>
-		<link  rel="stylesheet"  type="text/css"  href="./style.css"  /> 
-		<script  src="./index.js"></script>
-	</head> 
-	<body> 
-		<div  id="map"></div>
+  <head> 
+    <title>Simple Map</title>
+    <script  src="https://polyfill.io/v3/polyfill.min.js?	features=default"></script>
+    <link  rel="stylesheet"  type="text/css"  href="./style.css"  /> 
+    <script  src="./index.js"></script>
+  </head> 
+  <body> 
+    <div  id="map"></div>
 
-		<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-		<script  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"  async  ></script>
-	</body>  
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script  src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"  async  ></script>
+  </body>  
 </html>
 ```
-```
-CSS:
+```css
 /* Always set the map height explicitly to define the size of the div  
-       * element that contains the map. */  
-#map {  height:  100%;  
-}  
+element that contains the map. */
+#map {  height:  100% }  
   
 /* Optional: Makes the sample page fill the window. */  
-html,body {  height:  100%;  margin:  0;  padding:  0;  
+html,body {  
+  height:  100%;
+  margin:  0;
+  padding:  0;
 }
 ```
-```
-JAVASCRIPT:
-let map;  
+```javascript
+let map; 
   
 function initMap()  {
-	map =  new google.maps.Map(document.getElementById("map"),  {
-	center:  { lat:  -34.397, lng:  150.644  },
-	zoom:  8,
-	});  
+  map =  new google.maps.Map(document.getElementById("map"),  {
+    center:  { lat:  -34.397, lng:  150.644  },
+    zoom:  8,
+  });  
 }
 ```
 **Para obtener más información:**
@@ -104,14 +103,14 @@ function initMap()  {
 La API de Maps Embed permite colocar un mapa interactivo en una página web con una simple solicitud HTTP, no se requiere JavaScript, esta consta de una URL y parámetros, es util cuando no se puede usar la etiqueta `<script>`.
 
 Mediante la etiqueta `<iframe>` se pueden insertar mapas de la siguiente manera:
-```
+```html
 <iframe
-	width="600"
-	height="450"
-	style="border:0"
-	loading="lazy"
-	allowfullscreen
-	src="https://www.google.com/maps/embed/v1/place?key= API_KEY &q=Space+Needle,Seattle+WA">  
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/place?key= API_KEY &q=Space+Needle,Seattle+WA"> 
 </iframe>
 ```
 Así luciría el mapa insertado:
